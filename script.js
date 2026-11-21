@@ -113,3 +113,101 @@ modalProyek.addEventListener("click", (acara) => {
     sembunyikanModal();
   }
 });
+const kanvasGear = document.createElement("canvas");
+kanvasGear.style.cssText =
+  "position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;";
+document.body.prepend(kanvasGear);
+
+const wadahUtama = document.querySelector(".wadah");
+if (wadahUtama) {
+  wadahUtama.style.position = "relative";
+  wadahUtama.style.zIndex = "1";
+}
+
+const ctx = kanvasGear.getContext("2d");
+let lebarLayar, tinggiLayar;
+let kecepatanScroll = 0;
+
+function aturUkuranKanvas() {
+  lebarLayar = kanvasGear.width = window.innerWidth;
+  tinggiLayar = kanvasGear.height = window.innerHeight;
+}
+window.addEventListener("resize", aturUkuranKanvas);
+aturUkuranKanvas();
+
+window.addEventListener("scroll", () => {
+  kecepatanScroll = 0.025;
+});
+
+function gambarRodaGigi(x, y, radiusLuar, jumlahGigi, sudut) {
+  const radiusDalam = radiusLuar - 12;
+  const langkah = (Math.PI * 2) / (jumlahGigi * 2);
+
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.rotate(sudut);
+  ctx.strokeStyle = "rgba(190, 242, 100, 0.14)";
+  ctx.lineWidth = 1.5;
+
+  ctx.beginPath();
+  for (let i = 0; i < jumlahGigi * 2; i++) {
+    const r = i % 2 === 0 ? radiusLuar : radiusDalam;
+    const a = i * langkah;
+    if (i === 0) ctx.moveTo(Math.cos(a) * r, Math.sin(a) * r);
+    else ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r);
+  }
+  ctx.closePath();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(0, 0, radiusDalam * 0.65, 0, Math.PI * 2);
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(0, 0, radiusDalam * 0.22, 0, Math.PI * 2);
+  ctx.stroke();
+
+  for (let j = 0; j < 4; j++) {
+    const sudutJari = (Math.PI / 2) * j;
+    ctx.beginPath();
+    ctx.moveTo(
+      Math.cos(sudutJari) * (radiusDalam * 0.22),
+      Math.sin(sudutJari) * (radiusDalam * 0.22),
+    );
+    ctx.lineTo(
+      Math.cos(sudutJari) * (radiusDalam * 0.65),
+      Math.sin(sudutJari) * (radiusDalam * 0.65),
+    );
+    ctx.stroke();
+  }
+
+  ctx.restore();
+}
+
+let sudutPutar = 0;
+function animasiRodaGigi() {
+  ctx.clearRect(0, 0, lebarLayar, tinggiLayar);
+
+  sudutPutar += 0.002 + kecepatanScroll;
+  kecepatanScroll *= 0.92;
+
+  gambarRodaGigi(lebarLayar * 0.88, tinggiLayar * 0.22, 140, 18, sudutPutar);
+  gambarRodaGigi(
+    lebarLayar * 0.88 - 195,
+    tinggiLayar * 0.22 + 115,
+    95,
+    12,
+    -sudutPutar * 1.5,
+  );
+  gambarRodaGigi(
+    lebarLayar * 0.1,
+    tinggiLayar * 0.82,
+    165,
+    20,
+    -sudutPutar * 0.8,
+  );
+
+  requestAnimationFrame(animasiRodaGigi);
+}
+
+animasiRodaGigi();
