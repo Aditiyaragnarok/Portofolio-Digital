@@ -34,7 +34,7 @@ perbaruiJam();
    3. SALIN ALAMAT SUREL KE PAPAN KLIP
 ========================================= */
 const tombolSalin = document.getElementById("tombolSalinSurel");
-const alamatSurel = "halo@rakapratama.id";
+const alamatSurel = "aditiyanuralamsyah225@gmail.com";
 
 tombolSalin.addEventListener("click", () => {
   navigator.clipboard.writeText(alamatSurel).then(() => {
@@ -94,7 +94,7 @@ kartuProyek.forEach((kartu) => {
 
     modalMeta.textContent = `${tahun} — ${peran}`;
     modalJudul.textContent = judul;
-    modalDeskripsi.textContent = detail;
+    modalDeskripsi.innerHTML = detail;
 
     modalProyek.classList.add("terbuka");
     modalProyek.setAttribute("aria-hidden", "false");

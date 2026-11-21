@@ -1,226 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Digital — Aditiya Nur Alamsyah </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  
-  <!-- Menghubungkan berkas CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="wadah">
-    <!-- Navigasi Utama -->
-    <nav class="navigasi">
-      <a href="#" class="merek">Aditiya<span>.</span>N</a>
-      <ul class="tautan-nav">
-        <li><a href="#tentang">Ringkasan</a></li>
-        <li><a href="#karya">Karya Pilihan</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-      <div class="lencana-status">
-        <span class="titik-denyut"></span>
-        <span>Siap Berkolaborasi</span>
-      </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Digital — Aditiya Nur Alamsyah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Tata Letak Bento Grid -->
-    <main id="tentang" class="grid-bento">
-      <!-- Kartu Perkenalan Utama -->
-      <section class="kartu-bento bentang-8">
-        <span class="label-kecil">Siswa teknik otomotif</span>
-        <h1 class="judul-utama">Memadukan ketelitian teknis, analisis data, dan komunikasi efektif untuk solusi yang terukur.</h1>
-        <p class="deskripsi-utama">
-          Saya siap berkontribusi dalam operasional teknis maupun perencanaan berbasis data dengan standar keselematan dan efisiensi tinggi.
-        </p>
-        <div class="grup-tombol">
-          <a href="#karya" class="tombol tombol-utama">Lihat Pengalaman</a>
-          <button type="button" id="tombolSalinSurel" class="tombol tombol-sekunder">
-            Salin Alamat Surel
-          </button>
+    <!-- Menghubungkan berkas CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wadah">
+      <!-- Navigasi Utama -->
+      <nav class="navigasi">
+        <a href="#" class="merek">Aditiya<span>.</span></a>
+        <ul class="tautan-nav">
+          <li><a href="#tentang">Ringkasan</a></li>
+          <li><a href="#karya">Karya Pilihan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="lencana-status">
+          <span class="titik-denyut"></span>
+          <span>Siap Berkarir</span>
         </div>
-      </section>
+      </nav>
 
-      <!-- Kartu Profil Singkat & Waktu Lokal -->
-      <aside class="kartu-bento bentang-4 kartu-profil">
-        <div>
-          <img src="gambar/pp.jpeg" alt="Foto Profil Aditiya Nur Alamsyah" class="foto-profil" />
-          <h2 style="font-size: 1.25rem; margin-bottom: 0.35rem;">Aditiya Nur Alamsyah</h2>
-          <p style="color: var(--teks-sekunder); font-size: 0.92rem;">
-            Berfokus pada efisiensi operasional teknis, dan komunikasi yang terukur.
+      <!-- Tata Letak Bento Grid -->
+      <main id="tentang" class="grid-bento">
+        <!-- Kartu Perkenalan Utama -->
+        <section class="kartu-bento bentang-8">
+          <span class="label-kecil">SISWA TKR SMK AL-MUFTI</span>
+          <h1 class="judul-utama">
+            Mengutamakan ketelitian, diagnosa akurat, dan standar keselamatan
+            kerja dalam perawatan serta perbaikan kendaraan.
+          </h1>
+          <p class="deskripsi-utama">
+            Siswa Teknik Kendaraan Ringan yang siap beerkontribusi menjaga
+            performa optimal mesin, sasis, dan sistem-sistem kendaraan secara
+            profesional
           </p>
-        </div>
-        <div class="info-lokasi">
-          <span>Subang, ID</span>
-          <span id="jamLokal">00:00:00 WIB</span>
-        </div>
-      </aside>
-
-      <!-- Kartu Keahlian Utama -->
-      <section class="kartu-bento bentang-4">
-        <span class="label-kecil">Keahlian</span>
-        <div class="daftar-teknologi">
-          <span class="pil-teknologi">Service berkala 20.000 KM</span>
-          <span class="pil-teknologi">Dojo Welding</span>
-          <span class="pil-teknologi">Dojo Asembly</span>
-          <span class="pil-teknologi">Dojo Safety</span>
-          <span class="pil-teknologi">Dojo Measurements</span>
-          <span class="pil-teknologi"></span>
-          <span class="pil-teknologi">Public Speaking</span>
-        </div>
-      </section>
-
-      <!-- Kartu Pencapaian Terukur -->
-      <section class="kartu-bento bentang-4">
-        <span class="label-kecil">pencapaian</span>
-        <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
-          <div>
-           
-        
-
-        
-          <div>
-            <div class="angka-besar">5</div>
-            <p style="color: var(--teks-sekunder); font-size: 0.88rem; margin-top: 0.35rem;">Sertifikat</p>
+          <div class="grup-tombol">
+            <a href="#karya" class="tombol tombol-utama">Lihat Pengalaman</a>
+            <button
+              type="button"
+              id="tombolSalinSurel"
+              class="tombol tombol-sekunder"
+            >
+              Salin Alamat Surel
+            </button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Kartu Prinsip Kerja -->
-      <section class="kartu-bento bentang-4">
-        <span class="label-kecil">Prinsip Hidup</span>
-        <p class="kutipan-kerja">
-          “Belajar dari masa lalu, hidup di masa kini, rencanakan masa depan"
-          
-        </p>
-      </section>
-    </main>
-
-    <!-- Bagian Karya Pilihan -->
-    <section id="karya">
-      <div class="kepala-bagian">
-        <div>
-          <span class="label-kecil" style="margin-bottom: 0.4rem;">Dokumentasi </span>
-          <h2 class="judul-bagian">Pengalaman</h2>
-        </div>
-        <div class="grup-filter" role="tablist">
-          <button class="tombol-filter aktif" data-filter="semua">Semua</button>
-          <button class="tombol-filter" data-filter="web">Servis & Bengkel</button>
-          <button class="tombol-filter" data-filter="desain">Pelatihan Dojo</button>
-        </div>
-      </div>
-
-      <div class="grid-proyek">
-        <!-- Proyek 1 -->
-        <article 
-          class="kartu-proyek" 
-          data-kategori="web"
-          data-judul="Nusantara Analitik"
-          data-tahun="2026"
-          data-peran="Pengembang Utama"
-          data-detail="Platform pemantauan data logistik waktu nyata dengan visualisasi grafik interaktif yang mampu memproses ribuan titik pengiriman tanpa hambatan performa.">
+        <!-- Kartu Profil Singkat & Waktu Lokal -->
+        <aside class="kartu-bento bentang-4 kartu-profil">
           <div>
-            <div class="pratinjau-visual pola-1">[ PRATINJAU SISTEM ANALITIK ]</div>
-            <div class="meta-proyek">
-              <span>Servive Berkala</span>
-              <span>2026</span>
+            <img
+              src="gambar/Foto.jpeg"
+              alt="Foto Profil Aditiya Nur Alamsyah"
+              class="foto-profil"
+            />
+            <h2 style="font-size: 1.25rem; margin-bottom: 0.35rem">
+              Aditiya Nur Alamsyah
+            </h2>
+            <p style="color: var(--teks-sekunder); font-size: 0.92rem">
+              Berfokus pada efisiensi operasional teknis, dan komunikasi yang
+              terukur.
+            </p>
+          </div>
+          <div class="info-lokasi">
+            <span>Subang, ID</span>
+            <span id="jamLokal">00:00:00 WIB</span>
+          </div>
+        </aside>
+
+        <!-- Kartu Keahlian Utama -->
+        <section class="kartu-bento bentang-4">
+          <span class="label-kecil">Keahlian</span>
+          <div class="daftar-teknologi">
+            <span class="pil-teknologi">Service berkala 20.000 KM</span>
+            <span class="pil-teknologi">Dojo Welding</span>
+            <span class="pil-teknologi">Dojo Asembly</span>
+            <span class="pil-teknologi">Dojo Safety</span>
+            <span class="pil-teknologi">Dojo Measurements</span>
+            <span class="pil-teknologi">Inggris (passive)</span>
+            <span class="pil-teknologi">Public Speaking</span>
+          </div>
+        </section>
+
+        <!-- Kartu Pencapaian Terukur -->
+        <section class="kartu-bento bentang-4">
+          <span class="label-kecil">pencapaian</span>
+          <div style="display: flex; gap: 2rem; margin-top: 0.5rem">
+            <div>
+              <div class="angka-besar">5</div>
+              <p
+                style="
+                  color: var(--teks-sekunder);
+                  font-size: 0.88rem;
+                  margin-top: 0.35rem;
+                "
+              >
+                Sertifikat
+              </p>
             </div>
-            <h3 class="judul-proyek">Nusantara Analitik</h3>
-            <p class="ringkasan-proyek">Dasbor pemantauan rantai pasok waktu nyata dengan arsitektur data berlatensi rendah.</p>
           </div>
-          <span class="tautan-detail">Baca Studi Kasus &rarr;</span>
-        </article>
+        </section>
 
-        <!-- Proyek 2 -->
-        <article 
-          class="kartu-proyek" 
-          data-kategori="desain"
-          data-judul="Kala Sistem Desain"
-          data-tahun="2025"
-          data-peran="Arsitek UI/UX"
-          data-detail="Pustaka komponen antarmuka terpadu yang mencakup lebih dari 60 elemen siap pakai, pedoman aksesibilitas tingkat tinggi, serta token warna otomatis.">
+        <!-- Kartu Prinsip Kerja -->
+        <section class="kartu-bento bentang-4">
+          <span class="label-kecil">Prinsip Hidup</span>
+          <p class="kutipan-kerja">
+            “Belajar dari masa lalu, hidup di masa kini, rencanakan masa depan"
+          </p>
+        </section>
+      </main>
+
+      <!-- Bagian Karya Pilihan -->
+      <section id="karya">
+        <div class="kepala-bagian">
           <div>
-            <div class="pratinjau-visual pola-2">[ KOMPONEN MODULAR KALA ]</div>
-            <div class="meta-proyek">
-              <span>DESAIN SISTEM</span>
-              <span>2025</span>
+            <span class="label-kecil" style="margin-bottom: 0.4rem"
+              >Dokumentasi
+            </span>
+            <h2 class="judul-bagian">Pengalaman</h2>
+          </div>
+          <div class="grup-filter" role="tablist">
+            <button class="tombol-filter aktif" data-filter="semua">
+              Semua
+            </button>
+            <button class="tombol-filter" data-filter="web">
+              Servis & Bengkel
+            </button>
+            <button class="tombol-filter" data-filter="desain">
+              Pelatihan Dojo
+            </button>
+          </div>
+        </div>
+
+        <div class="grid-proyek">
+          <!-- Proyek 1 -->
+          <article
+            class="kartu-proyek"
+            data-kategori="web"
+            data-judul="USK Daihatsu"
+            data-tahun="2026"
+            data-peran="Peserta USK"
+            data-detail="Menjalani <strong>Uji Sertifikasi Kompetensi</strong> perawatan berkala 20.000 km dibawah penilaian langsung asesor resmi <strong>daihatsu.</strong> Pengerjaan meliputi penerapan <strong>keselamatan kerja</strong> dan <strong>budaya 5S</strong>, inspeksi menyeluruh sistem pengereman, penggantian oli dan oil filter, pengecekan kaki-kaki, dll."
+          >
+            <div>
+              <img
+                src="gambar/Service.jpeg"
+                alt="Dokumentasi Proyek"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                  margin-bottom: 1rem;
+                  display: block;
+                "
+              />
+              <div class="meta-proyek">
+                <span>Service Berkala</span>
+                <span>2026</span>
+              </div>
+              <h3 class="judul-proyek">USK Daihatsu</h3>
+              <p class="ringkasan-proyek">
+                <strong>Uji Sertifikasi Kompetensi (USK)</strong> bersama
+                daihatsu untuk mengukur kelayakan siswa selama proses belajar,
+                dengan menerapkan SOP, ketelitian, standar keselamatan kerja
+                perusahaan
+              </p>
             </div>
-            <h3 class="judul-proyek">Kala Sistem Desain</h3>
-            <p class="ringkasan-proyek">Pustaka komponen antarmuka lintas platform untuk mempercepat pengembangan produk digital.</p>
-          </div>
-          <span class="tautan-detail">Baca Studi Kasus &rarr;</span>
-        </article>
+            <span class="tautan-detail">Selengkapnya &rarr;</span>
+          </article>
 
-        <!-- Proyek 3 -->
-        <article 
-          class="kartu-proyek" 
-          data-kategori="web"
-          data-judul="Ruang Arsitek Studio"
-          data-tahun="2025"
-          data-peran="Pengembang Kreatif"
-          data-detail="Situs web pameran digital untuk biro arsitektur dengan tata letak editorial, transisi halaman mulus, dan galeri resolusi tinggi yang dioptimalkan.">
-          <div>
-            <div class="pratinjau-visual pola-3">[ GALERI EDITORIAL ARSITEKTUR ]</div>
-            <div class="meta-proyek">
-              <span>APLIKASI WEB</span>
-              <span>2025</span>
+          <!-- Proyek 2 -->
+          <article
+            class="kartu-proyek"
+            data-kategori="desain"
+            data-judul="Dojo Welding"
+            data-tahun="2026"
+            data-peran="Praktek Dojo"
+            data-detail="Mengikuti pelatihan intensif <strong>Las CO2</strong> sesuai standar industri manufaktur otomotif, praktek meliputi penyetelan ampere, voltase, kecepatan kawat, dan aliran gas CO2 menjaga kestabilan sudut serta jarak torch agar hasil lasan rapi dan kuat, hingga penerapan penuh <strong>APD dan prosedur keselamatan kerja</strog>."
+          >
+            <div>
+              <img
+                src="gambar/lasco2.jpeg"
+                alt="Dokumentasi Proyek"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                  margin-bottom: 1rem;
+                  display: block;
+                "
+              />
+              <div class="meta-proyek">
+                <span>PELATIHAN DOJO</span>
+                <span>2026</span>
+              </div>
+              <h3 class="judul-proyek">Dojo Welding-Las CO2</h3>
+              <p class="ringkasan-proyek">
+                Pelatihan intensif pengelasan
+                <strong>CO2 (GMAW)</strong> standar industri otomotif, berfokus
+                pada pengaturan arus dan kecepatan kawat, kestabilan sudut
+                torch, serta penerapan K3
+              </p>
             </div>
-            <h3 class="judul-proyek">Ruang Arsitek Studio</h3>
-            <p class="ringkasan-proyek">Situs pameran karya arsitektur dengan pendekatan tipografi editorial dan animasi halus.</p>
-          </div>
-          <span class="tautan-detail">Baca Studi Kasus &rarr;</span>
-        </article>
+            <span class="tautan-detail">Selengkapnya &rarr;</span>
+          </article>
 
-        <!-- Proyek 4 -->
-        <article 
-          class="kartu-proyek" 
-          data-kategori="desain"
-          data-judul="Dompet Saku Finansial"
-          data-tahun="2024"
-          data-peran="Desainer Produk"
-          data-detail="Perancangan ulang pengalaman pengguna pada aplikasi pencatatan keuangan pribadi yang berhasil meningkatkan retensi pengguna harian sebesar 34 persen.">
-          <div>
-            <div class="pratinjau-visual pola-4">[ ANTARMUKA APLIKASI KEUANGAN ]</div>
+          <!-- Proyek 3 -->
+          <article
+            class="kartu-proyek"
+            data-kategori="web"
+            data-judul="Pelatihan Dojo Miniline- TPS"
+            data-tahun="2026"
+            data-peran="PRAKTIK DOJO"
+            data-detail="Mengikuti pelatihan teori dan praktik penerapan <strong>Toyota Production System (TPS)</strong> pada simulasi lini perakitan otomotif <strong>Dojo Miniline</strong>. Materi dan praktik mencakup penerapan pilar <strong>Just-In-Time</strong> dan <strong>Jidoka</strong> untuk menjaga kualitas di setiap pos kerja, eliminasi pemborosan melalui prinsip <strong>Kaizen</strong>, serta perakitan komponen bodi seperti door weatherstrip sesuai SOP pekerjaan terstandar, ketepatan <strong>takt time</strong>, dan budaya <strong>5S serta K3</strong>"
+          >
+            <div>
+              <img
+                src="gambar/Miniline.jpeg"
+                alt="Dokumentasi Proyek"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                  margin-bottom: 1rem;
+                  display: block;
+                "
+              />
+              <div class="meta-proyek">
+                <span>PELATIHAN DOJO</span>
+                <span>2026</span>
+              </div>
+              <h3 class="judul-proyek">Dojo Miniline-TPS</h3>
+              <p class="ringkasan-proyek">
+                Pelatihan teori dan praktik
+                <strong>toyota Production System (TPS)</strong> melalui simulasi
+                lini perakitan otomotif, berfokus pada pekerjaan terstandar,
+                efisiensi waktu siklus, serta kualitas hasil rakitan.
+              </p>
+            </div>
+            <span class="tautan-detail">Selengkapnya &rarr;</span>
+          </article>
+
+          <!-- Proyek 4 -->
+          <article
+            class="kartu-proyek"
+            data-kategori="desain"
+            data-judul="Pelatihan Dojo Miniline- TPS"
+            data-tahun="2024"
+            data-peran="Desainer Produk"
+            data-detail="Perancangan ulang pengalaman pengguna pada aplikasi pencatatan keuangan pribadi yang berhasil meningkatkan retensi pengguna harian sebesar 34 persen."
+          >
+            <div></div>
             <div class="meta-proyek">
-              <span>DESAIN SISTEM</span>
+              <span>PELATIHAN DOJO</span>
               <span>2024</span>
             </div>
-            <h3 class="judul-proyek">Dompet Saku Finansial</h3>
-            <p class="ringkasan-proyek">Aplikasi pengelolaan arus kas pribadi dengan alur pencatatan transaksi di bawah tiga detik.</p>
-          </div>
-          <span class="tautan-detail">Baca Studi Kasus &rarr;</span>
-        </article>
-      </div>
-    </section>
+            <h3 class="judul-proyek">Dojo Miniline-TPS</h3>
+            <p class="ringkasan-proyek">
+              Aplikasi pengelolaan arus kas pribadi dengan alur pencatatan
+              transaksi di bawah tiga detik.
+            </p>
 
-    <!-- Bagian Penutup -->
-    <footer id="kontak" class="footer">
-      <p>&copy; 2026 Aditiya Nur Alamsyah. Dirancang dengan presisi.</p>
-      <div class="tautan-sosial">
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
-      </div>
-    </footer>
-  </div>
+            <span class="tautan-detail">Selengkapnya &rarr;</span>
+          </article>
+        </div>
+      </section>
 
-  <!-- Modal Detail Proyek -->
-  <div id="modalProyek" class="latar-modal" aria-hidden="true">
-    <div class="kotak-modal">
-      <button type="button" id="tutupModal" class="tutup-modal" aria-label="Tutup">&times;</button>
-      <span id="modalMeta" class="label-kecil">2026 — Peran</span>
-      <h3 id="modalJudul" style="font-size: 1.6rem; margin-bottom: 1rem;">Judul Proyek</h3>
-      <p id="modalDeskripsi" style="color: var(--teks-sekunder); line-height: 1.7; margin-bottom: 1.75rem;">
-        Penjelasan lengkap proyek akan tampil di sini.
-      </p>
-      <a href="#kontak" id="modalTautanKontak" class="tombol tombol-utama">Diskusikan Proyek Serupa</a>
+      <!-- Bagian Penutup -->
+      <footer id="kontak" class="footer">
+        <p>&copy; 2026 Aditiya Nur Alamsyah. Dirancang dengan presisi.</p>
+        <div class="tautan-sosial">
+          <a href="https://instagram.com/4almsyh" target="_blank" rel="noopener"
+            >Instagram</a
+          >
+          <a href="mailto:aditiyanuralamsyah225@gmail.com">Email</a>
+          <a
+            href="https://github.com/thordewapetir"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </footer>
     </div>
-  </div>
 
-  <!-- Menghubungkan berkas JavaScript -->
-  <script src="script.js"></script>
-</body>
+    <!-- Modal Detail Proyek -->
+    <div id="modalProyek" class="latar-modal" aria-hidden="true">
+      <div class="kotak-modal">
+        <div class="gear-modal" aria-hidden="true">
+          <svg class="putar-kanan" viewBox="0 0 100 100">
+            <g fill="none" stroke="#bef264" stroke-width="2">
+              <circle cx="50" cy="50" r="30" />
+              <circle cx="50" cy="50" r="14" />
+              <rect x="46" y="10" width="8" height="10" />
+              <rect x="46" y="80" width="8" height="10" />
+              <rect x="10" y="46" width="10" height="8" />
+              <rect x="80" y="46" width="10" height="8" />
+              <rect
+                x="46"
+                y="10"
+                width="8"
+                height="10"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="46"
+                y="80"
+                width="8"
+                height="10"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="10"
+                y="46"
+                width="10"
+                height="8"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="80"
+                y="46"
+                width="10"
+                height="8"
+                transform="rotate(45 50 50)"
+              />
+            </g>
+          </svg>
+          <svg class="putar-kiri" viewBox="0 0 100 100">
+            <g fill="none" stroke="#bef264" stroke-width="2.5">
+              <circle cx="50" cy="50" r="28" />
+              <circle cx="50" cy="50" r="12" />
+              <rect x="45" y="10" width="10" height="12" />
+              <rect x="45" y="78" width="10" height="12" />
+              <rect x="10" y="45" width="12" height="10" />
+              <rect x="78" y="45" width="12" height="10" />
+              <rect
+                x="45"
+                y="10"
+                width="10"
+                height="12"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="45"
+                y="78"
+                width="10"
+                height="12"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="10"
+                y="45"
+                width="12"
+                height="10"
+                transform="rotate(45 50 50)"
+              />
+              <rect
+                x="78"
+                y="45"
+                width="12"
+                height="10"
+                transform="rotate(45 50 50)"
+              />
+            </g>
+          </svg>
+        </div>
+        <button
+          type="button"
+          id="tutupModal"
+          class="tutup-modal"
+          aria-label="Tutup"
+        >
+          &times;
+        </button>
+        <span id="modalMeta" class="label-kecil">2026 — Peran</span>
+        <h3 id="modalJudul" style="font-size: 1.6rem; margin-bottom: 1rem">
+          Judul Proyek
+        </h3>
+        <p
+          id="modalDeskripsi"
+          style="
+            color: var(--teks-sekunder);
+            line-height: 1.7;
+            margin-bottom: 1.75rem;
+          "
+        >
+          Penjelasan lengkap proyek akan tampil di sini.
+        </p>
+        <a href="#kontak" id="modalTautanKontak" class="tombol tombol-utama"
+          >Hubungi Saya</a
+        >
+      </div>
+    </div>
+
+    <!-- Menghubungkan berkas JavaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>
