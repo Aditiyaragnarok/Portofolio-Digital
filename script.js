@@ -211,3 +211,60 @@ function animasiRodaGigi() {
 }
 
 animasiRodaGigi();
+// Animasi muncul halus saat web dibuka & di-scroll
+const elemenAnimasi = document.querySelectorAll(
+  "nav, .kartu-bento, .kartu-proyek, .footer",
+);
+
+const pengamat = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("tampil");
+        }, index * 80);
+        pengamat.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
+
+elemenAnimasi.forEach((el) => {
+  el.classList.add("animasi-masuk");
+  pengamat.observe(el);
+});
+// Animasi hitung angka otomatis pada kartu Pencapaian
+const daftarAngka = document.querySelectorAll(".angka-besar[data-target]");
+
+const pengamatAngka = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.getAttribute("data-target"), 10);
+        const akhiran = el.getAttribute("data-akhiran") || "";
+        const durasi = 900;
+        const waktuMulai = performance.now();
+
+        const updateAngka = (waktuSekarang) => {
+          const progres = Math.min((waktuSekarang - waktuMulai) / durasi, 1);
+          const easeOut = 1 - Math.pow(1 - progres, 2);
+          const nilaiSekarang = Math.round(easeOut * target);
+
+          el.textContent = nilaiSekarang + (progres === 1 ? akhiran : "");
+
+          if (progres < 1) {
+            requestAnimationFrame(updateAngka);
+          }
+        };
+
+        requestAnimationFrame(updateAngka);
+        pengamatAngka.unobserve(el);
+      }
+    });
+  },
+  { threshold: 0.4 },
+);
+
+daftarAngka.forEach((angka) => pengamatAngka.observe(angka));

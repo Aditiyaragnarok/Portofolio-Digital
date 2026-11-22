@@ -21,7 +21,7 @@
         <a href="#" class="merek">Aditiya<span>.</span></a>
         <ul class="tautan-nav">
           <li><a href="#tentang">Ringkasan</a></li>
-          <li><a href="#karya">Karya Pilihan</a></li>
+          <li><a href="#karya">Pengalaman</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
         <div class="lencana-status">
@@ -40,7 +40,7 @@
             kerja dalam perawatan serta perbaikan kendaraan.
           </h1>
           <p class="deskripsi-utama">
-            Siswa Teknik Kendaraan Ringan yang siap beerkontribusi menjaga
+            Siswa Teknik Kendaraan Ringan yang siap berkontribusi menjaga
             performa optimal mesin, sasis, dan sistem-sistem kendaraan secara
             profesional
           </p>
@@ -51,7 +51,7 @@
               id="tombolSalinSurel"
               class="tombol tombol-sekunder"
             >
-              Salin Alamat Surel
+              Salin Alamat Email
             </button>
           </div>
         </section>
@@ -94,10 +94,10 @@
 
         <!-- Kartu Pencapaian Terukur -->
         <section class="kartu-bento bentang-4">
-          <span class="label-kecil">pencapaian</span>
-          <div style="display: flex; gap: 2rem; margin-top: 0.5rem">
-            <div>
-              <div class="angka-besar">5</div>
+          <span class="label-kecil">pencapaian dan pengalaman</span>
+          <div style="display: flex; gap: 1.5rem; margin-top: 0.5rem">
+            <div style="flex: 1">
+              <div class="angka-besar" data-target="5">0</div>
               <p
                 style="
                   color: var(--teks-sekunder);
@@ -106,6 +106,18 @@
                 "
               >
                 Sertifikat
+              </p>
+            </div>
+            <div style="flex: 1">
+              <div class="angka-besar" data-target="6">0</div>
+              <p
+                style="
+                  color: var(--teks-sekunder);
+                  font-size: 0.88rem;
+                  margin-top: 0.35rem;
+                "
+              >
+                Bulan Pengalaman Magang
               </p>
             </div>
           </div>
@@ -133,10 +145,10 @@
             <button class="tombol-filter aktif" data-filter="semua">
               Semua
             </button>
-            <button class="tombol-filter" data-filter="web">
+            <button class="tombol-filter" data-filter="servis">
               Servis & Bengkel
             </button>
-            <button class="tombol-filter" data-filter="desain">
+            <button class="tombol-filter" data-filter="pelatihan">
               Pelatihan Dojo
             </button>
           </div>
@@ -146,7 +158,7 @@
           <!-- Proyek 1 -->
           <article
             class="kartu-proyek"
-            data-kategori="web"
+            data-kategori="servis"
             data-judul="USK Daihatsu"
             data-tahun="2026"
             data-peran="Peserta USK"
@@ -183,7 +195,7 @@
           <!-- Proyek 2 -->
           <article
             class="kartu-proyek"
-            data-kategori="desain"
+            data-kategori="pelatihan"
             data-judul="Dojo Welding"
             data-tahun="2026"
             data-peran="Praktek Dojo"
@@ -206,7 +218,7 @@
                 <span>PELATIHAN DOJO</span>
                 <span>2026</span>
               </div>
-              <h3 class="judul-proyek">Dojo Welding-Las CO2</h3>
+              <h3 class="judul-proyek">Dojo Welding - Las CO2</h3>
               <p class="ringkasan-proyek">
                 Pelatihan intensif pengelasan
                 <strong>CO2 (GMAW)</strong> standar industri otomotif, berfokus
@@ -220,68 +232,115 @@
           <!-- Proyek 3 -->
           <article
             class="kartu-proyek"
-            data-kategori="web"
-            data-judul="Pelatihan Dojo Miniline- TPS"
+            data-kategori="pelatihan"
+            data-judul="Pelatihan Dojo Miniline - TPS"
             data-tahun="2026"
             data-peran="PRAKTIK DOJO"
-            data-detail="Mengikuti pelatihan teori dan praktik penerapan <strong>Toyota Production System (TPS)</strong> pada simulasi lini perakitan otomotif <strong>Dojo Miniline</strong>. Materi dan praktik mencakup penerapan pilar <strong>Just-In-Time</strong> dan <strong>Jidoka</strong> untuk menjaga kualitas di setiap pos kerja, eliminasi pemborosan melalui prinsip <strong>Kaizen</strong>, serta perakitan komponen bodi seperti door weatherstrip sesuai SOP pekerjaan terstandar, ketepatan <strong>takt time</strong>, dan budaya <strong>5S serta K3</strong>"
+            data-detail="Mengikuti pelatihan teori dan praktik penerapan <strong>Toyota Production System (TPS)</strong> pada simulasi lini perakitan otomotif <strong>Dojo Miniline</strong>. Materi dan praktik mencakup penerapan pilar <strong>Just-In-Time</strong> dan <strong>Jidoka</strong> untuk menjaga kualitas di setiap pos kerja, eliminasi pemborosan melalui prinsip <strong>Kaizen</strong>, serta perakitan komponen bodi seperti door weatherstrip sesuai SOP pekerjaan terstandar, ketepatan <strong>takt time</strong>, dan budaya <strong>5S serta K3</strong>."
           >
             <div>
               <img
                 src="gambar/Miniline.jpeg"
-                alt="Dokumentasi Proyek"
+                alt="Dokumentasi Pelatihan Dojo"
                 style="
                   width: 100%;
                   height: 200px;
                   object-fit: cover;
+                  object-position: center 15%;
                   border-radius: 12px;
                   margin-bottom: 1rem;
                   display: block;
                 "
               />
-              <div class="meta-proyek">
-                <span>PELATIHAN DOJO</span>
-                <span>2026</span>
-              </div>
-              <h3 class="judul-proyek">Dojo Miniline-TPS</h3>
-              <p class="ringkasan-proyek">
-                Pelatihan teori dan praktik
-                <strong>toyota Production System (TPS)</strong> melalui simulasi
-                lini perakitan otomotif, berfokus pada pekerjaan terstandar,
-                efisiensi waktu siklus, serta kualitas hasil rakitan.
-              </p>
             </div>
-            <span class="tautan-detail">Selengkapnya &rarr;</span>
+            <div class="meta-proyek">
+              <span>PELATIHAN DOJO</span>
+              <span>2026</span>
+            </div>
+            <h3 class="judul-proyek">Dojo Miniline - TPS</h3>
+            <p class="ringkasan-proyek">
+              Pelatihan teori dan praktik Toyota Production System (TPS) melalui
+              simulasi lini perakitan otomotif, berfokus pada pekerjaan
+              terstandar, efisiensi waktu siklus, serta penerapan K3.
+            </p>
+            <span class="tautan-detail">Selengkapnya →</span>
           </article>
 
           <!-- Proyek 4 -->
           <article
             class="kartu-proyek"
-            data-kategori="desain"
-            data-judul="Pelatihan Dojo Miniline- TPS"
-            data-tahun="2024"
-            data-peran="Desainer Produk"
-            data-detail="Perancangan ulang pengalaman pengguna pada aplikasi pencatatan keuangan pribadi yang berhasil meningkatkan retensi pengguna harian sebesar 34 persen."
+            data-kategori="servis"
+            data-judul="PKL — Astra Daihatsu Asia Afrika Bandung"
+            data-tahun="2026"
+            data-peran="Asisten Mekanik"
+            data-detail="Menjalani Praktik Kerja Lapangan (PKL) sebagai Asisten Mekanik di Astra International – Daihatsu Sales Operation (AI DSO) Asia Afrika Bandung. Terlibat langsung dalam pengerjaan servis berkala, pemeriksaan sistem rem dan kaki-kaki, penggantian oli serta filter, turun transmisi, dan overhaul engine sesuai SOP bengkel resmi Daihatsu."
           >
-            <div></div>
-            <div class="meta-proyek">
-              <span>PELATIHAN DOJO</span>
-              <span>2024</span>
+            <div>
+              <img
+                src="gambar/pkl.jpeg"
+                alt="Dokumentasi PKL AI DSO Asia Afrika"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  object-position: center 55%;
+                  border-radius: 12px;
+                  margin-bottom: 1rem;
+                  display: block;
+                "
+              />
             </div>
-            <h3 class="judul-proyek">Dojo Miniline-TPS</h3>
+            <div class="meta-proyek">
+              <span>PRAKTIK KERJA LAPANGAN</span>
+              <span>2026</span>
+            </div>
+            <h3 class="judul-proyek">PKL — AI DSO Asia Afrika</h3>
             <p class="ringkasan-proyek">
-              Aplikasi pengelolaan arus kas pribadi dengan alur pencatatan
-              transaksi di bawah tiga detik.
+              Praktik Kerja Lapangan sebagai Asisten Mekanik di Astra
+              International – Daihatsu Sales Operation (AI DSO) Asia Afrika
+              Bandung, menangani servis berkala dan perawatan kendaraan.
             </p>
+            <span class="tautan-detail">Selengkapnya →</span>
+          </article>
 
-            <span class="tautan-detail">Selengkapnya &rarr;</span>
+          <!--Proyek 5-->
+          <article
+            class="kartu-proyek"
+            data-kategori="pelatihan"
+            data-judul="Dojo asembly"
+            data-tahun="2026"
+            data-peran=""
+            data-detail=""
+          >
+            <div>
+              <img
+                src="gambar/asembly.jpeg"
+                alt="dokumentasi pelatihan"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  object-position: center 20%;
+                  border-radius: 12px;
+                  margin-bottom: 1rem;
+                  display: block;
+                "
+              />
+            </div>
+            <div class="meta-proyek">
+              <span>Dojo asembly</span>
+              <span>2026</span>
+            </div>
+            <h3 class="judul-proyek">Dojo asembly</h3>
+            <p class="ringkasan-proyek">ringkasan singkat</p>
+            <span class="tautan-detail">Selengkapnya</span>
           </article>
         </div>
       </section>
 
       <!-- Bagian Penutup -->
       <footer id="kontak" class="footer">
-        <p>&copy; 2026 Aditiya Nur Alamsyah. Dirancang dengan presisi.</p>
+        <p>&copy; 2026 Aditiya Nur Alamsyah.</p>
         <div class="tautan-sosial">
           <a href="https://instagram.com/4almsyh" target="_blank" rel="noopener"
             >Instagram</a
