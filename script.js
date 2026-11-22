@@ -85,23 +85,58 @@ const modalJudul = document.getElementById("modalJudul");
 const modalDeskripsi = document.getElementById("modalDeskripsi");
 const modalTautanKontak = document.getElementById("modalTautanKontak");
 
+let timerKetik;
+
+function mulaiMengetik(elemen, teks, kecepatan = 18) {
+  clearInterval(timerKetik);
+  elemen.innerHTML = "";
+
+  if (!teks) {
+    elemen.classList.remove("efek-ketik");
+    return;
+  }
+
+  elemen.classList.add("efek-ketik");
+  let index = 0;
+  let hasil = "";
+
+  timerKetik = setInterval(() => {
+    if (index < teks.length) {
+      if (teks.slice(index, index + 4).toLowerCase() === "<br>") {
+        hasil += "<br>";
+        index += 4;
+      } else {
+        hasil += teks.charAt(index);
+        index++;
+      }
+      elemen.innerHTML = hasil;
+    } else {
+      clearInterval(timerKetik);
+      elemen.classList.remove("efek-ketik");
+    }
+  }, kecepatan);
+}
+
 kartuProyek.forEach((kartu) => {
   kartu.addEventListener("click", () => {
     const judul = kartu.getAttribute("data-judul");
     const tahun = kartu.getAttribute("data-tahun");
     const peran = kartu.getAttribute("data-peran");
-    const detail = kartu.getAttribute("data-detail");
+    const detail = kartu.getAttribute("data-detail") || "";
 
     modalMeta.textContent = `${tahun} — ${peran}`;
     modalJudul.textContent = judul;
-    modalDeskripsi.innerHTML = detail;
 
     modalProyek.classList.add("terbuka");
     modalProyek.setAttribute("aria-hidden", "false");
+
+    mulaiMengetik(modalDeskripsi, detail, 18);
   });
 });
 
 function sembunyikanModal() {
+  clearInterval(timerKetik);
+  modalDeskripsi.classList.remove("efek-ketik");
   modalProyek.classList.remove("terbuka");
   modalProyek.setAttribute("aria-hidden", "true");
 }
